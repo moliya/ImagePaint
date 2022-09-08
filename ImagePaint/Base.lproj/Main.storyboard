@@ -861,13 +861,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="60" horizontalPageScroll="10" verticalLineScroll="60" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiM-8s-Org">
-                                <rect key="frame" x="10" y="60" width="480" height="215"/>
+                                <rect key="frame" x="10" y="60" width="480" height="212"/>
                                 <clipView key="contentView" drawsBackground="NO" id="CCq-Mq-mgH">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="215"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="212"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" tableStyle="inset" selectionHighlightStyle="none" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="50" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="6Kn-UE-nOJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="480" height="215"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="480" height="212"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="17" height="10"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1044,7 +1044,7 @@
                                     <constraint firstAttribute="width" constant="34" id="Azt-uD-lTI"/>
                                     <constraint firstAttribute="height" constant="22" id="MJ8-Cq-jMJ"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="border" alignment="right" title="0.2" drawsBackground="YES" id="TRh-yX-Yex">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="border" alignment="right" title="1" drawsBackground="YES" id="TRh-yX-Yex">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

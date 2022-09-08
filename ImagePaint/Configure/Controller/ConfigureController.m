@@ -17,7 +17,7 @@
 
 @property (nonatomic, strong) NSMutableArray *colorList;
 
-@property (nonatomic, strong) id eventHandler;
+@property (nonatomic, assign) NSInteger lastSelectedRow;
 
 @end
 
@@ -30,17 +30,8 @@
     self.tableView.delegate = self;
     self.tableView.selectionHighlightStyle = NSTableViewSelectionHighlightStyleRegular;
     
-    CGFloat threshold = [NSUserDefaults.standardUserDefaults floatForKey:@"ColorThreshold"];
-    NSString *str = [NSString stringWithFormat:@"%.2f", threshold];
-    if ([str hasSuffix:@"0"] && [str containsString:@"."]) {
-        str = [str substringToIndex:str.length - 1];
-    }
-    if ([str hasSuffix:@"0"] && [str containsString:@"."]) {
-        str = [str substringToIndex:str.length - 1];
-    }
-    if ([str hasSuffix:@"."]) {
-        str = [str substringToIndex:str.length - 1];
-    }
+    NSInteger threshold = [NSUserDefaults.standardUserDefaults integerForKey:@"ColorThreshold"];
+    NSString *str = [NSString stringWithFormat:@"%zi", threshold];
     self.rangField.stringValue = str;
     
     CGFloat cornerRadius = [NSUserDefaults.standardUserDefaults floatForKey:@"ColorCornerRadius"];
@@ -59,23 +50,19 @@
     for (ColorModel *model in self.colors) {
         [self.colorList addObject:model];
     }
-    
-    self.eventHandler = [NSEvent addLocalMonitorForEventsMatchingMask:NSEventMaskKeyDown handler:^NSEvent * _Nullable(NSEvent * _Nonnull event) {
-        if (event.keyCode == 51) {
-            // 删除
-            if (self.tableView.selectedRow >= 0 && self.tableView.selectedRow < self.colorList.count) {
-                [self deleteCellAtIndex:self.tableView.selectedRow];
-                return nil;
-            }
+}
+
+- (void)keyDown:(NSEvent *)event {
+    if (event.keyCode == 51) {
+        // 删除
+        if (self.tableView.selectedRow >= 0 && self.tableView.selectedRow < self.colorList.count) {
+            [self deleteCellAtIndex:self.tableView.selectedRow];
         }
-        if (event.keyCode == 36) {
-            // 回车
-            [self confirmAction:nil];
-            return nil;
-        }
-        
-        return event;
-    }];
+    }
+    if (event.keyCode == 36) {
+        // 回车
+        [self confirmAction:nil];
+    }
 }
 
 - (void)addAction {
@@ -116,6 +103,13 @@
     return cell;
 }
 
+- (void)tableViewSelectionIsChanging:(NSNotification *)notification {
+    if (self.lastSelectedRow != self.tableView.selectedRow) {
+        ColorCell *oldCell = [self.tableView viewAtColumn:0 row:self.lastSelectedRow makeIfNecessary:NO];
+        [oldCell updateSelectionStyle:NO];
+    }
+}
+
 - (BOOL)tableView:(NSTableView *)tableView shouldSelectRow:(NSInteger)row {
     if (tableView.selectedRow == row) {
         return YES;
@@ -130,13 +124,8 @@
     
     ColorCell *newCell = [tableView viewAtColumn:0 row:row makeIfNecessary:NO];
     [newCell updateSelectionStyle:YES];
+    self.lastSelectedRow = row;
     
-    return YES;
-}
-
-#pragma mark - NSWindowDelegate
-- (BOOL)windowShouldClose:(NSWindow *)sender {
-    [NSEvent removeMonitor:self.eventHandler];
     return YES;
 }
 

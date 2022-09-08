@@ -12,10 +12,10 @@
 @implementation NSImage (Change)
 
 - (NSImage *)changeFromColor:(NSColor *)color1 toColor:(NSColor *)color2 {
-    return [self changeFromColor:color1 toColor:color2 withThreshold:0.1];
+    return [self changeFromColor:color1 toColor:color2 withThreshold:10];
 }
 
-- (NSImage *)changeFromColor:(NSColor *)color1 toColor:(NSColor *)color2 withThreshold:(CGFloat)threshold {
+- (NSImage *)changeFromColor:(NSColor *)color1 toColor:(NSColor *)color2 withThreshold:(NSInteger)threshold {
     NSColor *inColor = [color1 colorUsingColorSpace:[NSColorSpace sRGBColorSpace]];
     NSColor *outColor = [color2 colorUsingColorSpace:[NSColorSpace sRGBColorSpace]];
     
@@ -70,8 +70,14 @@
     return resultImage;
 }
 
-- (BOOL)testColor:(float[3])color1 withColor:(NSColor *)color2 threshold:(float)threshold {
-    return ((fabs(color1[0] - color2.redComponent) < threshold) && (fabs(color1[1] - color2.greenComponent) < threshold) && (fabs(color1[2] - color2.blueComponent) < threshold));
+- (BOOL)testColor:(float[3])color1 withColor:(NSColor *)color2 threshold:(NSInteger)threshold {
+    CGFloat offset = threshold / 100.0;
+    CGFloat diff1 = fabs(color1[0] - color2.redComponent);
+    CGFloat diff2 = fabs(color1[1] - color2.greenComponent);
+    CGFloat diff3 = fabs(color1[2] - color2.blueComponent);
+    
+//    return (diff1 + diff2 + diff3) < offset;
+    return diff1 < offset && diff2 < offset && diff3 < offset;
 }
 
 void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWidth, float ovalHeight) {

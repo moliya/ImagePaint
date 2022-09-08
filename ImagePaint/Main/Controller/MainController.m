@@ -25,7 +25,7 @@
 @property (weak) IBOutlet NSTextField   *tipLabel;
 
 @property (nonatomic, strong) NSMutableArray<ColorModel *>  *configList;
-@property (nonatomic, assign) CGFloat threshold;
+@property (nonatomic, assign) NSInteger threshold;
 @property (nonatomic, assign) CGFloat cornerRadius;
 
 @end
@@ -36,9 +36,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.threshold = [NSUserDefaults.standardUserDefaults floatForKey:@"ColorThreshold"];
+    self.threshold = [NSUserDefaults.standardUserDefaults integerForKey:@"ColorThreshold"];
     if (self.threshold <= 0) {
-        self.threshold = 0.1;
+        self.threshold = 10;
     }
     
     self.cornerRadius = [NSUserDefaults.standardUserDefaults floatForKey:@"ColorCornerRadius"];
@@ -102,7 +102,7 @@
     [self startTransform:sender withThreshold:self.threshold];
 }
 
-- (void)startTransform:(SYFlatButton *)sender withThreshold:(CGFloat)threshold {
+- (void)startTransform:(SYFlatButton *)sender withThreshold:(NSInteger)threshold {
     sender.enabled = NO;
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
@@ -221,9 +221,9 @@
     });
 }
 
-- (void)setThreshold:(CGFloat)threshold {
+- (void)setThreshold:(NSInteger)threshold {
     _threshold = threshold;
-    [NSUserDefaults.standardUserDefaults setFloat:threshold forKey:@"ColorThreshold"];
+    [NSUserDefaults.standardUserDefaults setInteger:threshold forKey:@"ColorThreshold"];
 }
 
 - (void)setCornerRadius:(CGFloat)cornerRadius {
@@ -265,7 +265,7 @@
 - (void)configColors {
     ConfigureController *vc = [[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"config"];
     vc.colors = self.configList;
-    vc.confirmHandler = ^(NSArray * _Nonnull colors, CGFloat threshold, CGFloat cornerRadius) {
+    vc.confirmHandler = ^(NSArray * _Nonnull colors, NSInteger threshold, CGFloat cornerRadius) {
         [self.configList removeAllObjects];
         [self.configList addObjectsFromArray:colors];
         NSMutableArray *arr = [NSMutableArray array];

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSImage *)changeFromColor:(NSColor *)color1 toColor:(NSColor *)color2;
 
-- (NSImage *)changeFromColor:(NSColor *)color1 toColor:(NSColor *)color2 withThreshold:(CGFloat)threshold;
+- (NSImage *)changeFromColor:(NSColor *)color1 toColor:(NSColor *)color2 withThreshold:(NSInteger)threshold;
 
 - (NSImage *)roundCornersImageCornerRadius:(CGFloat)radius;
 

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ConfigureController : NSViewController
 
 @property (nonatomic, strong) NSArray   *colors;
-@property (nonatomic, copy) void (^confirmHandler)(NSArray *colors, CGFloat threshold, CGFloat cornerRadius);
+@property (nonatomic, copy) void (^confirmHandler)(NSArray *colors, NSInteger threshold, CGFloat cornerRadius);
 
 @end
 
