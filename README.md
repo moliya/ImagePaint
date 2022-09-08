@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="logo.png" alt="Clash" width="200">
+  <img src="logo.png" alt="ImagePaint" width="200">
   <br>
   ImagePaint
   <br>
