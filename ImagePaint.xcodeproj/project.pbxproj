@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17DD1F2B28C59DF5002DDDC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F2A28C59DF5002DDDC0 /* AppDelegate.m */; };
+		17DD1F3028C59DF7002DDDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DD1F2F28C59DF7002DDDC0 /* Assets.xcassets */; };
+		17DD1F3328C59DF7002DDDC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DD1F3128C59DF7002DDDC0 /* Main.storyboard */; };
+		17DD1F3528C59DF7002DDDC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F3428C59DF7002DDDC0 /* main.m */; };
+		17DD1F4228C59FF5002DDDC0 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F4128C59FF5002DDDC0 /* MainController.m */; };
+		17DD1F4828C5A0A5002DDDC0 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F4728C5A0A5002DDDC0 /* WindowController.m */; };
+		17DD1F4B28C5A0ED002DDDC0 /* ConfigureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F4A28C5A0ED002DDDC0 /* ConfigureController.m */; };
+		17DD1F4E28C5A14A002DDDC0 /* ImageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F4D28C5A14A002DDDC0 /* ImageListView.m */; };
+		17DD1F5128C5A193002DDDC0 /* DragDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F5028C5A193002DDDC0 /* DragDropView.m */; };
+		17DD1F5428C5A745002DDDC0 /* NSView+AddMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F5328C5A745002DDDC0 /* NSView+AddMenu.m */; };
+		17DD1F5728C5ACB3002DDDC0 /* NSColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F5628C5ACB3002DDDC0 /* NSColor+Hex.m */; };
+		17DD1F5A28C5ACEF002DDDC0 /* NSImage+Change.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F5928C5ACEF002DDDC0 /* NSImage+Change.m */; };
+		17DD1F5D28C5C237002DDDC0 /* ColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F5C28C5C237002DDDC0 /* ColorCell.m */; };
+		17DD1F6128C5C2C1002DDDC0 /* ColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F6028C5C2C1002DDDC0 /* ColorModel.m */; };
+		17DD1F6428C5C346002DDDC0 /* AddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F6328C5C346002DDDC0 /* AddCell.m */; };
+		17DD1F6928C5C732002DDDC0 /* SYFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F6828C5C732002DDDC0 /* SYFlatButton.m */; };
+		17DD1F6D28C7154E002DDDC0 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F6C28C7154E002DDDC0 /* ImageModel.m */; };
+		17DD1F7028C71ADC002DDDC0 /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F6F28C71ADC002DDDC0 /* ImageView.m */; };
+		17DD1F7328C750A1002DDDC0 /* NSImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F7228C750A1002DDDC0 /* NSImage+Extension.m */; };
+		17DD1F8028C84BD8002DDDC0 /* PasteboardItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DD1F7F28C84BD8002DDDC0 /* PasteboardItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17DD1F2628C59DF5002DDDC0 /* ImagePaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17DD1F2928C59DF5002DDDC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17DD1F2A28C59DF5002DDDC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17DD1F2F28C59DF7002DDDC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17DD1F3228C59DF7002DDDC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17DD1F3428C59DF7002DDDC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17DD1F3628C59DF7002DDDC0 /* ImagePaint.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImagePaint.entitlements; sourceTree = "<group>"; };
+		17DD1F4028C59FF5002DDDC0 /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		17DD1F4128C59FF5002DDDC0 /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		17DD1F4628C5A0A5002DDDC0 /* WindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		17DD1F4728C5A0A5002DDDC0 /* WindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		17DD1F4928C5A0ED002DDDC0 /* ConfigureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigureController.h; sourceTree = "<group>"; };
+		17DD1F4A28C5A0ED002DDDC0 /* ConfigureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigureController.m; sourceTree = "<group>"; };
+		17DD1F4C28C5A14A002DDDC0 /* ImageListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageListView.h; sourceTree = "<group>"; };
+		17DD1F4D28C5A14A002DDDC0 /* ImageListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageListView.m; sourceTree = "<group>"; };
+		17DD1F4F28C5A193002DDDC0 /* DragDropView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragDropView.h; sourceTree = "<group>"; };
+		17DD1F5028C5A193002DDDC0 /* DragDropView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragDropView.m; sourceTree = "<group>"; };
+		17DD1F5228C5A745002DDDC0 /* NSView+AddMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSView+AddMenu.h"; sourceTree = "<group>"; };
+		17DD1F5328C5A745002DDDC0 /* NSView+AddMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSView+AddMenu.m"; sourceTree = "<group>"; };
+		17DD1F5528C5ACB3002DDDC0 /* NSColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSColor+Hex.h"; sourceTree = "<group>"; };
+		17DD1F5628C5ACB3002DDDC0 /* NSColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSColor+Hex.m"; sourceTree = "<group>"; };
+		17DD1F5828C5ACEF002DDDC0 /* NSImage+Change.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+Change.h"; sourceTree = "<group>"; };
+		17DD1F5928C5ACEF002DDDC0 /* NSImage+Change.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Change.m"; sourceTree = "<group>"; };
+		17DD1F5B28C5C237002DDDC0 /* ColorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorCell.h; sourceTree = "<group>"; };
+		17DD1F5C28C5C237002DDDC0 /* ColorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorCell.m; sourceTree = "<group>"; };
+		17DD1F5F28C5C2C1002DDDC0 /* ColorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorModel.h; sourceTree = "<group>"; };
+		17DD1F6028C5C2C1002DDDC0 /* ColorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorModel.m; sourceTree = "<group>"; };
+		17DD1F6228C5C346002DDDC0 /* AddCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCell.h; sourceTree = "<group>"; };
+		17DD1F6328C5C346002DDDC0 /* AddCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCell.m; sourceTree = "<group>"; };
+		17DD1F6728C5C732002DDDC0 /* SYFlatButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYFlatButton.h; sourceTree = "<group>"; };
+		17DD1F6828C5C732002DDDC0 /* SYFlatButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYFlatButton.m; sourceTree = "<group>"; };
+		17DD1F6B28C7154E002DDDC0 /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		17DD1F6C28C7154E002DDDC0 /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		17DD1F6E28C71ADC002DDDC0 /* ImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
+		17DD1F6F28C71ADC002DDDC0 /* ImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
+		17DD1F7128C750A1002DDDC0 /* NSImage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+Extension.h"; sourceTree = "<group>"; };
+		17DD1F7228C750A1002DDDC0 /* NSImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Extension.m"; sourceTree = "<group>"; };
+		17DD1F7728C84075002DDDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		17DD1F7E28C84BD8002DDDC0 /* PasteboardItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasteboardItem.h; sourceTree = "<group>"; };
+		17DD1F7F28C84BD8002DDDC0 /* PasteboardItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasteboardItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17DD1F2328C59DF5002DDDC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17DD1F1D28C59DF5002DDDC0 = {
+			isa = PBXGroup;
+			children = (
+				17DD1F2828C59DF5002DDDC0 /* ImagePaint */,
+				17DD1F2728C59DF5002DDDC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17DD1F2728C59DF5002DDDC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F2628C59DF5002DDDC0 /* ImagePaint.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17DD1F2828C59DF5002DDDC0 /* ImagePaint */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F7728C84075002DDDC0 /* Info.plist */,
+				17DD1F3C28C59E5C002DDDC0 /* Main */,
+				17DD1F3D28C59F41002DDDC0 /* Configure */,
+				17DD1F4528C5A014002DDDC0 /* Tools */,
+				17DD1F6528C5C6D5002DDDC0 /* Third */,
+				17DD1F2928C59DF5002DDDC0 /* AppDelegate.h */,
+				17DD1F2A28C59DF5002DDDC0 /* AppDelegate.m */,
+				17DD1F2F28C59DF7002DDDC0 /* Assets.xcassets */,
+				17DD1F3128C59DF7002DDDC0 /* Main.storyboard */,
+				17DD1F3428C59DF7002DDDC0 /* main.m */,
+				17DD1F3628C59DF7002DDDC0 /* ImagePaint.entitlements */,
+			);
+			path = ImagePaint;
+			sourceTree = "<group>";
+		};
+		17DD1F3C28C59E5C002DDDC0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F3E28C59FBD002DDDC0 /* Controller */,
+				17DD1F6A28C7152B002DDDC0 /* Model */,
+				17DD1F3F28C59FC4002DDDC0 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		17DD1F3D28C59F41002DDDC0 /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F4328C59FFA002DDDC0 /* Controller */,
+				17DD1F5E28C5C295002DDDC0 /* Model */,
+				17DD1F4428C5A009002DDDC0 /* View */,
+			);
+			path = Configure;
+			sourceTree = "<group>";
+		};
+		17DD1F3E28C59FBD002DDDC0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F4628C5A0A5002DDDC0 /* WindowController.h */,
+				17DD1F4728C5A0A5002DDDC0 /* WindowController.m */,
+				17DD1F4028C59FF5002DDDC0 /* MainController.h */,
+				17DD1F4128C59FF5002DDDC0 /* MainController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17DD1F3F28C59FC4002DDDC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F4F28C5A193002DDDC0 /* DragDropView.h */,
+				17DD1F5028C5A193002DDDC0 /* DragDropView.m */,
+				17DD1F4C28C5A14A002DDDC0 /* ImageListView.h */,
+				17DD1F4D28C5A14A002DDDC0 /* ImageListView.m */,
+				17DD1F6E28C71ADC002DDDC0 /* ImageView.h */,
+				17DD1F6F28C71ADC002DDDC0 /* ImageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17DD1F4328C59FFA002DDDC0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F4928C5A0ED002DDDC0 /* ConfigureController.h */,
+				17DD1F4A28C5A0ED002DDDC0 /* ConfigureController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17DD1F4428C5A009002DDDC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F5B28C5C237002DDDC0 /* ColorCell.h */,
+				17DD1F5C28C5C237002DDDC0 /* ColorCell.m */,
+				17DD1F6228C5C346002DDDC0 /* AddCell.h */,
+				17DD1F6328C5C346002DDDC0 /* AddCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17DD1F4528C5A014002DDDC0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F5228C5A745002DDDC0 /* NSView+AddMenu.h */,
+				17DD1F5328C5A745002DDDC0 /* NSView+AddMenu.m */,
+				17DD1F5528C5ACB3002DDDC0 /* NSColor+Hex.h */,
+				17DD1F5628C5ACB3002DDDC0 /* NSColor+Hex.m */,
+				17DD1F5828C5ACEF002DDDC0 /* NSImage+Change.h */,
+				17DD1F5928C5ACEF002DDDC0 /* NSImage+Change.m */,
+				17DD1F7128C750A1002DDDC0 /* NSImage+Extension.h */,
+				17DD1F7228C750A1002DDDC0 /* NSImage+Extension.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		17DD1F5E28C5C295002DDDC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F5F28C5C2C1002DDDC0 /* ColorModel.h */,
+				17DD1F6028C5C2C1002DDDC0 /* ColorModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17DD1F6528C5C6D5002DDDC0 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F6628C5C70C002DDDC0 /* SYFlatButton */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		17DD1F6628C5C70C002DDDC0 /* SYFlatButton */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F6728C5C732002DDDC0 /* SYFlatButton.h */,
+				17DD1F6828C5C732002DDDC0 /* SYFlatButton.m */,
+			);
+			path = SYFlatButton;
+			sourceTree = "<group>";
+		};
+		17DD1F6A28C7152B002DDDC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17DD1F6B28C7154E002DDDC0 /* ImageModel.h */,
+				17DD1F6C28C7154E002DDDC0 /* ImageModel.m */,
+				17DD1F7E28C84BD8002DDDC0 /* PasteboardItem.h */,
+				17DD1F7F28C84BD8002DDDC0 /* PasteboardItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17DD1F2528C59DF5002DDDC0 /* ImagePaint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17DD1F3928C59DF7002DDDC0 /* Build configuration list for PBXNativeTarget "ImagePaint" */;
+			buildPhases = (
+				17DD1F2228C59DF5002DDDC0 /* Sources */,
+				17DD1F2328C59DF5002DDDC0 /* Frameworks */,
+				17DD1F2428C59DF5002DDDC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImagePaint;
+			productName = ImagePaint;
+			productReference = 17DD1F2628C59DF5002DDDC0 /* ImagePaint.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17DD1F1E28C59DF5002DDDC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					17DD1F2528C59DF5002DDDC0 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 17DD1F2128C59DF5002DDDC0 /* Build configuration list for PBXProject "ImagePaint" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17DD1F1D28C59DF5002DDDC0;
+			productRefGroup = 17DD1F2728C59DF5002DDDC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17DD1F2528C59DF5002DDDC0 /* ImagePaint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17DD1F2428C59DF5002DDDC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DD1F3028C59DF7002DDDC0 /* Assets.xcassets in Resources */,
+				17DD1F3328C59DF7002DDDC0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17DD1F2228C59DF5002DDDC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DD1F6D28C7154E002DDDC0 /* ImageModel.m in Sources */,
+				17DD1F5428C5A745002DDDC0 /* NSView+AddMenu.m in Sources */,
+				17DD1F4E28C5A14A002DDDC0 /* ImageListView.m in Sources */,
+				17DD1F3528C59DF7002DDDC0 /* main.m in Sources */,
+				17DD1F7028C71ADC002DDDC0 /* ImageView.m in Sources */,
+				17DD1F6128C5C2C1002DDDC0 /* ColorModel.m in Sources */,
+				17DD1F5128C5A193002DDDC0 /* DragDropView.m in Sources */,
+				17DD1F5728C5ACB3002DDDC0 /* NSColor+Hex.m in Sources */,
+				17DD1F7328C750A1002DDDC0 /* NSImage+Extension.m in Sources */,
+				17DD1F4828C5A0A5002DDDC0 /* WindowController.m in Sources */,
+				17DD1F5D28C5C237002DDDC0 /* ColorCell.m in Sources */,
+				17DD1F5A28C5ACEF002DDDC0 /* NSImage+Change.m in Sources */,
+				17DD1F8028C84BD8002DDDC0 /* PasteboardItem.m in Sources */,
+				17DD1F4B28C5A0ED002DDDC0 /* ConfigureController.m in Sources */,
+				17DD1F6928C5C732002DDDC0 /* SYFlatButton.m in Sources */,
+				17DD1F6428C5C346002DDDC0 /* AddCell.m in Sources */,
+				17DD1F4228C59FF5002DDDC0 /* MainController.m in Sources */,
+				17DD1F2B28C59DF5002DDDC0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17DD1F3128C59DF7002DDDC0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17DD1F3228C59DF7002DDDC0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17DD1F3728C59DF7002DDDC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		17DD1F3828C59DF7002DDDC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		17DD1F3A28C59DF7002DDDC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ImagePaint/ImagePaint.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImagePaint/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carefree.ImagePaint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		17DD1F3B28C59DF7002DDDC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ImagePaint/ImagePaint.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImagePaint/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carefree.ImagePaint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17DD1F2128C59DF5002DDDC0 /* Build configuration list for PBXProject "ImagePaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17DD1F3728C59DF7002DDDC0 /* Debug */,
+				17DD1F3828C59DF7002DDDC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17DD1F3928C59DF7002DDDC0 /* Build configuration list for PBXNativeTarget "ImagePaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17DD1F3A28C59DF7002DDDC0 /* Debug */,
+				17DD1F3B28C59DF7002DDDC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17DD1F1E28C59DF5002DDDC0 /* Project object */;
+}
