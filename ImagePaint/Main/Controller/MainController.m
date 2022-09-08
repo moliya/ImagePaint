@@ -112,14 +112,14 @@
             if (!image) {
                 continue;
             }
-            NSData *data;
             for (ColorModel *model in self.configList) {
                 image = [image changeFromColor:[NSColor colorWithHexString:model.fromColor] toColor:[NSColor colorWithHexString:model.toColor] withThreshold:threshold];
-                if (self.cornerRadius > 0) {
-                    image = [image roundCornersImageCornerRadius:self.cornerRadius];
-                }
-                data = [image dataForFileType:imageModel.fileType];
             }
+            if (self.cornerRadius > 0) {
+                image = [image roundCornersImageCornerRadius:self.cornerRadius];
+            }
+            NSData *data = [image dataForFileType:imageModel.fileType];
+            
             ImageModel *result = [[ImageModel alloc] init];
             result.data = data;
             result.name = imageModel.name;
